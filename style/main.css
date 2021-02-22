@@ -70,7 +70,7 @@ section.footer {
 
 @media only screen and (max-width: 600px) {
   section.footer {
-    max-width: 100%;
+    max-width: 85vw;
   }
 }
 
@@ -87,8 +87,8 @@ section.footer  p {
 
 @media only screen and (max-width: 600px) {
   section.footer  p {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 3vw;
+    line-height: 3.75vw;
   }
 }
 
