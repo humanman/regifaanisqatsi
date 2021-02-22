@@ -79,7 +79,7 @@ section.footer  p {
   line-height: 2.5vw;
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 600px) {
   section.footer  p {
     font-size: 1rem;
     line-height: 1.25vw;
