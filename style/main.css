@@ -68,6 +68,12 @@ section.footer {
   text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+  section.footer {
+    max-width: 100%;
+  }
+}
+
 section.footer  p,
 section.footer  p > a {
   color: #48f4d2;
