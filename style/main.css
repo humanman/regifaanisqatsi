@@ -11,7 +11,7 @@ body {
   position: relative;
 }
 
-#video { 
+.video { 
   width: 100%;
   position: relative;
   padding-bottom: 56.25%;
@@ -21,9 +21,9 @@ body {
   overflow: hidden;
 }
 
-#video iframe,
-#video object,
-#video embed {
+.video iframe,
+.video object,
+.video embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -31,22 +31,29 @@ body {
   height: 100%;
 }
 
-header {
+header, .video-header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-header h2 {
-  color: #f521b2;
-  font-size: x-large;
-}
-
 header > img {
   max-width: 100%;
 
 }
+
+.video-header h2 {
+  color: #f521b2;
+  font-size: 3vw;
+}
+
+@media (max-width: 600px) {
+  .video-header h2 {
+    font-size: 4vw;
+  }
+}
+
 
 section {
   display: flex;
@@ -62,36 +69,56 @@ div {
   flex-direction: column;
 }
 
-section.footer {
-  margin-top: 5%;
-  max-width: 69vw;
+section.description {
+  margin-top: 2%;
+  margin-bottom: 5%;
+  max-width: 51vw;
   text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
-  section.footer {
+  section.description {
     max-width: 85vw;
   }
 }
 
-section.footer  p,
-section.footer  p > a {
+section.description.live-stream {
+  max-width: 60vw;
+}
+
+section.description  p,
+section.description  p > a,
+section .contact p, 
+section .contact p > a { 
   color: #48f4d2;
 }
 
-section.footer  p {
+section.description  p {
   margin: 0;
-  font-size: 2vw;
-  line-height: 2.5vw;
+  font-size: 1.5vw;
+  line-height: 2vw;
 }
 
 @media only screen and (max-width: 600px) {
-  section.footer  p {
-    font-size: 3vw;
-    line-height: 3.75vw;
+  section.description  p {
+    font-size: 2.5vw;
+    line-height: 3.5vw;
   }
 }
 
-section.footer > div {
+section .contact {
+  margin: 0;
+  font-size: 2.5vw;
+  line-height: 3vw;
+}
+
+@media only screen and (max-width: 600px) {
+  section .contact p {
+    font-size: 3.5vw;
+    line-height: 4vw;
+  }
+}
+
+section.description > div {
   padding: 5% 0;
 }
