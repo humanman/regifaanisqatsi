@@ -6,6 +6,11 @@
     <title>Space Wizards</title>
     <link rel="stylesheet" href="./style/main.css">
     <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+      <script type="text/javascript">
+        new Twitch.Player("twitch-embed", {
+          channel: "yarwad"
+        });
+      </script>
   </head>
 
   <body>
@@ -14,18 +19,16 @@
     <!-- All episodes -->
     <header class="video-header">
       <img src="./images/title_main_desktop.png" alt="Space Wizards must Die"/>      
-      <script type="text/javascript">
-  new Twitch.Player("twitch-embed", {
-    channel: "yarwad"
-  });
-</script>
       
       <h2>Watch episodes 1-4 here!</h2>
     </header>
 
+    <div id="twitch-embed"></div>
+
+    <br/>
     
     <section class="video">
-      <iframe height="315" width="560" src="https://player.twitch.tv/?channel=yarwad&parent=www.example.com" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
+     
       <iframe width="560" height="315" src="https://www.youtube.com/embed/0a7U1hgke04" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
@@ -67,6 +70,8 @@
         <a target="_blank" href="https://www.tiktok.com/@spacewizardsmustdie"><img src="./images/tiktok_logo.png" alt="Follow Space Wizards must Die on TikTok" /></a>
       </div>
     </section>
+
+ 
 
   </body>
 </html>
