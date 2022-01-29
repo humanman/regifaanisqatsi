@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Space Wizards</title>
     <link rel="stylesheet" href="./style/main.css">
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
   </head>
 
   <body>
@@ -12,7 +13,13 @@
     
     <!-- All episodes -->
     <header class="video-header">
-      <img src="./images/title_main_desktop.png" alt="Space Wizards must Die"/>
+      <img src="./images/title_main_desktop.png" alt="Space Wizards must Die"/>      
+      <script type="text/javascript">
+  new Twitch.Player("twitch-embed", {
+    channel: "yarwad"
+  });
+</script>
+      
       <h2>Watch episodes 1-4 now!</h2>
     </header>
 
@@ -20,6 +27,7 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/0a7U1hgke04" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
+      <div id="twitch-embed"></div>
     </section>
     
     <section class="description">
